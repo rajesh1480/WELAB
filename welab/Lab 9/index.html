@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Question 1 </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <form style="text-align: center;margin-top: 100px;" >
+
+<label>Enter a number</label>
+<input type="text" id="ghj"><br><br>
+<input type="button" onclick="fun()"   value="factorial">
+<h2 id="result"></h2>
+
+</label>
+
+   </form>
+   
+
+
+
+</body>
+<script>
+     fun=()=>
+    {
+        var f=1,i;
+        var a=document.getElementById("ghj").value;
+        for(i=1;i<=a;i++ ){
+f=f*i;
+        }
+        document.getElementById("result").innerHTML=f;
+ 
+
+    }
+   
+    
+    </script>
+
+
+</html>

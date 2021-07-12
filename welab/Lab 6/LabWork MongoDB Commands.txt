@@ -1,0 +1,36 @@
+Commands Used
+
+Case Study 1
+-----------------------------------------
+use CSE
+db.createCollection("StudentBD")
+db.StudentDB.find()
+db.StudentDB.find().pretty()
+db.StudentDB.insertMany([{name:"Vinay",rollno:"5H9",m1:98,m2:96,m3:58},{name:"Rajesh",roll:"5F2",m1:98,m2:96,m3:58}])
+db.StudentDB.find()
+db.StudentDB.find().pretty()
+db.StudentDB.updateOne({name:"Sai"},{$set:{m3:85}})
+db.StudentDB.find()
+db.StudentDB.deleteOne({name:"Sai"})
+db.StudentDB.find()
+db.StudentDB.find().pretty()
+
+
+------xxxxxxxxxxxxxxxxxxxxxxx---------------------------------------
+
+
+Case Study 2
+
+----------------------------------------
+use CSE
+db.createCollection("testtable")
+db.testtable.insertMany([{name:"Sai",age:21},{name:"Vinay",age:19},{name:"Rajesh",age:10}])
+db.testtable.find().pretty()
+db.testtable.find()
+db.testtable.find({age:{$gt:20}})
+db.testtable.find({age:{$lt:20}})
+db.testtable.find({age:{$gte:19}})
+db.testtable.find({age:{$lte:19}})
+db.testtable.find({age:{$lt:25,$gt:20}})
+
+-----xxxxxxxxxxxxxxxxxxxxxxxxx----------------------------------------------------------
